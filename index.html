@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMPLY BLOGGING</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+
+
+<body onload="store()">
+
+  <!-- login modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="admin.html" onsubmit="return validation()">
+            <div class="my-4">
+              <h5 class="modal-title">LOGIN</h5>
+            </div>
+            <div class="alert alert-danger error1 " id="error1" role="alert">Invalid username or password</div>
+            <div class="my-4">
+              <input type="text" class="form-control" id="username" placeholder="username" required>
+            </div>
+            <div class="my-4">
+              <input type="password" class="form-control" id="password" placeholder="password" required>
+            </div>
+            <div class="my-4">
+              <button type="submit" class="btn btn-dark">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <h2>Logo</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginmodal">ACCOUNT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- blogs -->
+  <section class='form-group' id="section">
+    <div class='row justify-content-center align-items-center mt-5 services py-5 space '>
+      <h3><strong>Privacy Preference Center</strong></h3>
+      <h6>Posted in Jun 08 2021 by Admin</h6>
+      <p>This website uses cookies and similar technologies, (hereafter “technologies”), which enable us, for example,
+        to determine how frequently our internet pages are visited, the number of visitors, to configure our offers for
+        maximum convenience and efficiency and to support our marketing efforts. These technologies incorporate data
+        transfers to third-party providers based in countries without an adequate level of data protection (e. g. United
+        States). For further information, including the processing of data by third-party providers and the possibility
+        of revoking your consent at any time, please see your settings under “Consent Preferences” and our Privacy
+        Notice</p>
+    </div>
+    <div class='row justify-content-center align-items-center mt-5 services py-5 space '>
+      <h3><strong>DHL Industrial Projects: Heavy-lift ship from Europe to Africa</strong></h3>
+      <h6>Posted in Jun 08 2021 by Admin</h6>
+      <p>Egypt's historic purchase is also the largest order of rolling stock in Hungary's history, where over half of
+        the coaches are being manufactured. Hungarian company Dunakeszi Járm?javító Kft, owned by TMH International AG
+        and Magyar Vagon Zrt, is building the coaches at its production site in Dunakeszi.
+        How do you get 676 passenger coaches, each weighing 48 tons and measuring 24.5 meters in length and 4.5 meters
+        in height, from Hungary to Egypt? It's an extraordinary, heavy-lift shipment via land and sea.</p>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="bg-dark text-center text-white mt-5" id="about">
+    <div class="container p-4 ">
+      <section class="mb-5">
+        <h3> Making commerce better for everyone</h3>
+        <p>
+          We help people achieve independence by making it easier to start, run, and grow a
+          business. We believe the future of commerce has more voices, not fewer, so we’re
+          reducing the barriers to business ownership to make commerce better for everyone.
+        </p>
+      </section>
+      <section class="">
+        <form>
+          <div class="row d-flex justify-content-center ">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" class="form-control" placeholder="Enter Your Email" required />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="text-center p-3 dark" >
+      Raghad Almujairishi © 2020
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMPLY BLOGGING</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+
+
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h2>Logo</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">ACCOUNT </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- form -->
+    <section class='form-group'>
+        <div class='row mt-5 services py-4 space '>
+            <div class="my-4">
+                <label for="n1">Title</label>
+                <input class="form-control" id="n1" placeholder="">
+            </div>
+            <div class="my-4">
+                <label for="n2">Description</label>
+                <textarea class="form-control" id="n2" rows="6"></textarea>
+            </div>
+            <div class="alert alert-danger error " id="error" role="alert" >Invalid username or password</div>
+            <div class="my-4">
+                <button class="btn btn-dark" onclick="add()">Add</button>
+                <a href="index.html"><button class="btn btn-dark" >view articles</button></a>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- footer -->
+ <footer class="bg-dark text-center text-white mt-5" id="about">
+    <div class="container p-4 ">
+      <section class="mb-5">
+        <h3> Making commerce better for everyone</h3>
+        <p>
+          We help people achieve independence by making it easier to start, run, and grow a
+          business. We believe the future of commerce has more voices, not fewer, so we’re
+          reducing the barriers to business ownership to make commerce better for everyone.
+        </p>
+      </section>
+      <section class="">
+        <form>
+          <div class="row d-flex justify-content-center ">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" class="form-control" placeholder="Enter Your Email" required />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="text-center p-3 dark" >
+      Raghad Almujairishi © 2020
+    </div>
+  </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+
+</body>
+
+</html>
